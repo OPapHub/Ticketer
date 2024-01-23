@@ -1,0 +1,54 @@
+﻿.about_container {
+    height: 100%;
+    /*overflow: auto;
+    overflow-x: hidden;*/
+}
+
+.about_left {
+    position: fixed;
+    height: 100%;
+    width: 50%;
+    background-image: url(../../../public/poster_about_black.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.about_right {
+    /*height: 100vh;*/  
+    display: -ms-flexbox;
+    display: flex;    
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: relative;
+    width: 50%;
+    left: 50%;
+    background-color: #2a2727;
+    padding: 50px 0 0;
+    box-sizing: border-box;
+}
+
+.about {
+    margin-bottom: 80px;
+    padding: 0 20px 0 80px;
+    box-sizing: border-box;
+}
+
+.about .breadcrumbs{
+    margin-top: 0;
+}
+
+.about_right h2 {
+    color: #fff;
+    font-size: 28px;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+
+.about_right .desc {
+    line-height: 26px;
+}
+
+ul.desc{
+    list-style:disc;
+    padding-left:20px;
+}

@@ -113,7 +113,7 @@
         width: calc(33.3% - 8px);
         border-radius: 4px;
         border: 1px solid hsla(0,0%,100%,.1);
-        padding: 10px 12px;
+        padding: 10px 12px;        
         position: relative;
         box-sizing: border-box;
         cursor: pointer;
@@ -156,9 +156,10 @@
 }*/
 
         .profile_page .main_content .info_block .fields_container .field p {
-            font-size: 12px;
+            font-size: 14px;
             font-weight: 700;
             line-height: 14px;
+            margin-bottom: 0;
         }
 
         .profile_page .main_content .info_block .fields_container .field .edit {
@@ -168,7 +169,7 @@
             border-radius: 50%;
             position: absolute;
             right: 12px;
-            top: 12px;
+            top: 11px;
             display: -ms-flexbox;
             display: flex;
             -ms-flex-align: center;

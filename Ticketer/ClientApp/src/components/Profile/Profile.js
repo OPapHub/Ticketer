@@ -82,24 +82,18 @@ const Cabinet = () => {
                                     <p className="info_block_desc">With a phone number, you can see all your orders. Mail is required for backup access to the office</p>
                                     <div className="fields_container">
                                         <div className="field">
-                                            <h5>Your City:</h5>
-                                            <p>Krakow</p>
-                                            {/*<select id="city">*/}
-                                            {/*    <option value="0">Undefined</option>*/}
-                                            {/*    <option value="1">Kraków</option>*/}
-                                            {/*    <option value="2">Warszaw</option>*/}
-                                            {/*    <option value="3">Łódż</option>*/}
-                                            {/*    <option value="4">Чернігів</option>*/}
-                                            {/*</select>*/}
-                                            {/*<p>&nbsp;</p>*/}
-                                            {/*<div class="buttons">*/}
-                                            {/*    <div class="button dropdown">*/}
-                                            {/*    </div>*/}
-                                            {/*</div>*/}
+                                            <h5>Birth Date:</h5>
+                                            <p className="birthDate">{user.birthDate}</p>
+                                            <div className="edit">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 528.899 528.899">
+                                                    <path d="M328.883 89.125l107.59 107.589-272.34 272.34L56.604 361.465l272.279-272.34zm189.23-25.948l-47.981-47.981c-18.543-18.543-48.653-18.543-67.259 0l-45.961 45.961 107.59 107.59 53.611-53.611c14.382-14.383 14.382-37.577 0-51.959zM.3 512.69c-1.958 8.812 5.998 16.708 14.811 14.565l119.891-29.069L27.473 390.597.3 512.69z">
+                                                    </path>
+                                                </svg>
+                                            </div>                                            
                                         </div>
                                         <div className="field">
                                             <h5>Mobile phone:</h5>
-                                            <p className="phone">0000000000</p>
+                                            <p className="phone">{user.phoneNumber}</p>
                                             <div className="edit">
                                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 528.899 528.899">
                                                     <path d="M328.883 89.125l107.59 107.589-272.34 272.34L56.604 361.465l272.279-272.34zm189.23-25.948l-47.981-47.981c-18.543-18.543-48.653-18.543-67.259 0l-45.961 45.961 107.59 107.59 53.611-53.611c14.382-14.383 14.382-37.577 0-51.959zM.3 512.69c-1.958 8.812 5.998 16.708 14.811 14.565l119.891-29.069L27.473 390.597.3 512.69z"></path>
@@ -109,6 +103,53 @@ const Cabinet = () => {
                                         <div className="field">
                                             <h5>E-mail:</h5>
                                             <p className="email">{user.email}</p>
+                                            <div className="edit">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 528.899 528.899">
+                                                    <path d="M328.883 89.125l107.59 107.589-272.34 272.34L56.604 361.465l272.279-272.34zm189.23-25.948l-47.981-47.981c-18.543-18.543-48.653-18.543-67.259 0l-45.961 45.961 107.59 107.59 53.611-53.611c14.382-14.383 14.382-37.577 0-51.959zM.3 512.69c-1.958 8.812 5.998 16.708 14.811 14.565l119.891-29.069L27.473 390.597.3 512.69z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="info_block">
+                                <div className="main_info">
+                                    <h4 className="info_block_heading">Personal information</h4>
+                                    <p className="info_block_desc">Tell us more about yourself ;)</p>
+                                    <div className="fields_container">
+                                        <div className="field">
+                                            <h5>Birth Date:</h5>
+                                            <p className="birthDate">{user.name}</p>
+                                            <div className="edit">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 528.899 528.899">
+                                                    <path d="M328.883 89.125l107.59 107.589-272.34 272.34L56.604 361.465l272.279-272.34zm189.23-25.948l-47.981-47.981c-18.543-18.543-48.653-18.543-67.259 0l-45.961 45.961 107.59 107.59 53.611-53.611c14.382-14.383 14.382-37.577 0-51.959zM.3 512.69c-1.958 8.812 5.998 16.708 14.811 14.565l119.891-29.069L27.473 390.597.3 512.69z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div className="field">
+                                            <h5>Mobile phone:</h5>
+                                            <p className="phone">{user.surname}</p>
+                                            <div className="edit">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 528.899 528.899">
+                                                    <path d="M328.883 89.125l107.59 107.589-272.34 272.34L56.604 361.465l272.279-272.34zm189.23-25.948l-47.981-47.981c-18.543-18.543-48.653-18.543-67.259 0l-45.961 45.961 107.59 107.59 53.611-53.611c14.382-14.383 14.382-37.577 0-51.959zM.3 512.69c-1.958 8.812 5.998 16.708 14.811 14.565l119.891-29.069L27.473 390.597.3 512.69z"></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div className="field">
+                                            <h5>E-mail:</h5>
+                                            <p className="email">{user.birthDate}</p>
+                                            <div className="edit">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 528.899 528.899">
+                                                    <path d="M328.883 89.125l107.59 107.589-272.34 272.34L56.604 361.465l272.279-272.34zm189.23-25.948l-47.981-47.981c-18.543-18.543-48.653-18.543-67.259 0l-45.961 45.961 107.59 107.59 53.611-53.611c14.382-14.383 14.382-37.577 0-51.959zM.3 512.69c-1.958 8.812 5.998 16.708 14.811 14.565l119.891-29.069L27.473 390.597.3 512.69z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div className="field">
+                                            <h5>E-mail:</h5>
+                                            <p className="email">{user.sex}</p>
                                             <div className="edit">
                                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 528.899 528.899">
                                                     <path d="M328.883 89.125l107.59 107.589-272.34 272.34L56.604 361.465l272.279-272.34zm189.23-25.948l-47.981-47.981c-18.543-18.543-48.653-18.543-67.259 0l-45.961 45.961 107.59 107.59 53.611-53.611c14.382-14.383 14.382-37.577 0-51.959zM.3 512.69c-1.958 8.812 5.998 16.708 14.811 14.565l119.891-29.069L27.473 390.597.3 512.69z">

@@ -14,6 +14,7 @@ namespace Ticketer.Data
         public DbSet<Seat> Seats { get; set; }
         public DbSet<Reserved_Seat> Reserved_Seats { get; set; }
         public DbSet<Genre> Genres { get; set; }
+        public DbSet<Movie_Theatre> Movie_Theatres { get; set; }
         public DataContext(DbContextOptions<DataContext> options) : base(options)
         {
         }
@@ -37,6 +38,13 @@ namespace Ticketer.Data
                 .WithMany(s => s.Reserved_Seats) // Assuming Seat has a collection property named ReservedSeats
                 .HasForeignKey(rs => rs.Ticket_Id)
                 .OnDelete(DeleteBehavior.NoAction);
+
+            modelBuilder.Entity<Schedule>()
+            .HasOne(s => s.Movie_Theatre)
+            .WithMany(mt => mt.Schedules)
+            .HasForeignKey(s => s.Movie_Theatre_Id)
+            .OnDelete(DeleteBehavior.NoAction);
+
         }
 
     }
